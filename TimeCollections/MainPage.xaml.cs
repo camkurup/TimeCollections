@@ -8,10 +8,5 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
-
-    private void OnActivityClicked(object sender, EventArgs e)
-    {
-
-    }
 }
 
