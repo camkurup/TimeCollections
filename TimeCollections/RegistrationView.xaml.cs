@@ -1,10 +1,9 @@
-﻿namespace TimeCollections;
+namespace TimeCollections;
 
-public partial class MainPage : ContentPage
+public partial class RegistrationView : ContentPage
 {
-	public MainPage()
+	public RegistrationView()
 	{
 		InitializeComponent();
 	}
 }
-

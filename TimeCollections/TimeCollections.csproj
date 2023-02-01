@@ -53,12 +53,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="RegistrationView.xaml.cs">
-	    <DependentUpon>RegistrationView.xaml</DependentUpon>
-	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiXaml Update="CreateNewRegistration.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
