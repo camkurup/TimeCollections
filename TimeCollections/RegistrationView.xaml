@@ -13,7 +13,7 @@
                    Text="Registration"
                    FontSize="Header"
                    Margin="20"/>
-
+            
             <Label x:Name="ProjectName"
                    Text="Project Name:"
                    Padding="10"/>

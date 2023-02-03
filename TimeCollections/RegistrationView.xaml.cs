@@ -5,13 +5,8 @@ namespace TimeCollections;
 public partial class RegistrationView : ContentPage
 {
 	private IDispatcherTimer timer;
-
 	private int counterInSeconds;
-
 	private bool isRunning;
-
-
-
 
 	public RegistrationView()
 	{
@@ -20,9 +15,8 @@ public partial class RegistrationView : ContentPage
 		timer = Dispatcher.CreateTimer();
 		timer.Interval = TimeSpan.FromSeconds(1);
 		timer.Tick += Timer_Tick;
-
-	
 	}
+
 	private void Timer_Tick(object sender, EventArgs e)
 	{
 		counterInSeconds++;
@@ -36,20 +30,16 @@ public partial class RegistrationView : ContentPage
 
 	public void OnStartStop(object sender, EventArgs e)
 	{
-
 		StartStop();
-		
-
 	}
-
 
 	public void StartStop()
 	{
 		if (isRunning)
 		{
 			StopTimer();
-
-		} else
+		} 
+		else
 		{
 			StartTimer();
 		}
@@ -66,9 +56,5 @@ public partial class RegistrationView : ContentPage
 		timer.Stop();
 		StartStopContinueTime.Text = "Start";
 		isRunning = false;
-
 	}
-
-
-
 }

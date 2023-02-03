@@ -20,14 +20,6 @@ public partial class CreateNewRegistration : ContentPage
 			InputActivity.ToString(), 
 			InputText.ToString());
 
-
 		registrations.Add(timeRegistration);
 	}
-
-	
-
-
-	
-
-
 }
