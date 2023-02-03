@@ -1,11 +1,11 @@
+using TimeCollections.Controller;
 using TimeCollections.Model;
 
 namespace TimeCollections;
 
 public partial class CreateNewRegistration : ContentPage
 {
-
-	List<TimeRegistration> registrations;
+	private TimeRegistrationController controller;
 	public CreateNewRegistration()
 	{
 		InitializeComponent();
@@ -20,8 +20,8 @@ public partial class CreateNewRegistration : ContentPage
 			InputActivity.ToString(), 
 			InputText.ToString());
 
-
-		registrations.Add(timeRegistration);
+		controller.GetTimeRegistrations().Add(timeRegistration);
+		
 	}
 
 	

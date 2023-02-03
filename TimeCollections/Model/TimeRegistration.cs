@@ -31,5 +31,7 @@ namespace TimeCollections.Model
 			this.text = _text;
 		}
 
+		public TimeRegistration() { }
+
 	}
 }

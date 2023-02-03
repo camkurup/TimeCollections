@@ -5,13 +5,52 @@
     <StackLayout Margin="20"
                  Orientation="Horizontal"
                  HorizontalOptions="Center">
-        <VerticalStackLayout >
+        <!--<VerticalStackLayout >
             <Button x:Name="activity"
-                    Text="Name of registration her"
+                    Text="Name of registration here"
                     BackgroundColor="DarkBlue"
                     Margin="20"
                     Padding="50"/>
-        </VerticalStackLayout>
+
+        </VerticalStackLayout>-->
+        <ListView x:Name="listTimeRegistrations">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Margin="20"
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center">
+                            <HorizontalStackLayout>
+                                <Label Text="Project:" Padding="0,0,10,0" FontAttributes="Bold"/>
+                                <Label Text="{Binding Project}"/>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout>
+                                <Label Text="Customer:" Padding="0,0,10,0" FontAttributes="Bold"/>
+                                <Label Text="{Binding Customer}" />
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout>
+                                <Label Text="Employee:" Padding="0,0,10,0" FontAttributes="Bold"/>
+                                <Label Text="{Binding Employee}" />
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout>
+                                <Label Text="Activity:" Padding="0,0,10,0" FontAttributes="Bold"/>
+                                <Label Text="{Binding Activity}" />
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout>
+                                <Label Text="Text:" Padding="0,0,10,0" FontAttributes="Bold"/>
+                                <Label Text="{Binding Text}" />
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout>
+                                <Label Text="Time:" Padding="0,0,10,0" FontAttributes="Bold"/>
+                                <Label Text="{Binding Time}" />
+                            </HorizontalStackLayout>
+                        </StackLayout>
+                    </ViewCell>
+               
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
+    
 
 </ContentPage>

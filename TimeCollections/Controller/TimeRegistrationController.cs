@@ -9,7 +9,7 @@ namespace TimeCollections.Controller
 {
 	internal class TimeRegistrationController
 	{
-
+		
 		List<TimeRegistration> timeRegistrations = new List<TimeRegistration>()
 		{
 			new TimeRegistration("project1", "Hans Hansen ApS", "JSH", "Programmering", "PIM Project"),
@@ -21,7 +21,12 @@ namespace TimeCollections.Controller
 			new TimeRegistration("project7", "Lolland-Falsters Bryghus AS", "JSH", "Konsulenttimer", "PowerBI")
 		};
 
+	
+		public List<TimeRegistration> GetTimeRegistrations()
+		{
+			return timeRegistrations;
+		}
 
 	}
-}
+
 }
