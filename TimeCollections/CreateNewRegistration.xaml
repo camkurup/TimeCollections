@@ -9,45 +9,52 @@
                  HorizontalOptions="Center">
 
         <VerticalStackLayout Margin="20,35,20,25">
-            <Label x:Name="CreateNewRegistration"
-               Text="Creat New Registration"
-               Margin="20"/>
+            <Label x:Name="CreateRegistration"
+                   Text="Creat New Registration"
+                   Margin="20"
+                   FontSize="Header"/>
             <HorizontalStackLayout Margin="20">
+                
                 <Label x:Name="ProjectName"
                        Text="Project Name"
                        Padding="10"/>
-                <Entry x:Name="InputProjectName"/>
+                
+                <Entry x:Name="InputProjectName"
+                       Placeholder="Enter text"/>
             </HorizontalStackLayout>
             
             <HorizontalStackLayout Margin="20">
                 <Label x:Name="Costumer"
                        Text="Costumer"
                        Padding="10"/>
-                <Entry x:Name="InputCostumer"/>
+                <Entry x:Name="InputCostumer"
+                       Placeholder="Enter text"/>
             </HorizontalStackLayout>
             
             <HorizontalStackLayout Margin="20">
                 <Label x:Name="Employee"
                        Text="Employee"
                        Padding="10"/>
-                <Entry x:Name="InputEmployee"/>
+                <Entry x:Name="InputEmployee"
+                       Placeholder="Enter text"/>
             </HorizontalStackLayout>
             <HorizontalStackLayout Margin="20">
                 <Label x:Name="Activity"
                        Text="Activity"
                        Padding="10"/>
-                <Entry x:Name="InputActivity"/>
+                <Entry x:Name="InputActivity"
+                       Placeholder="Enter text"/>
             </HorizontalStackLayout>
 
             <HorizontalStackLayout Margin="20">
                 <Label x:Name="Text"
                        Text="Text"
                        Padding="10"/>
-                <Entry x:Name="InputText"/>
+                <Entry x:Name="InputText"
+                       Placeholder="Enter text"/>
             </HorizontalStackLayout>
 
             <Button x:Name="Create"
-                    Clicked="OnCreateRegistration"
                     Text="Creat"
                     BackgroundColor="DarkBlue"
                     Margin="20"

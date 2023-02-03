@@ -3,10 +3,58 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TimeCollections.RegistrationView"
              Title="RegistrationView">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <StackLayout Margin="20"
+                 Orientation="Horizontal"
+                 HorizontalOptions="Center">
+
+        <VerticalStackLayout Margin="20,35,20,25">
+            <Label x:Name="Registration"
+                   Text="Registration"
+                   FontSize="Header"
+                   Margin="20"/>
+
+            <Label x:Name="ProjectName"
+                   Text="Project Name:"
+                   Padding="10"/>
+
+            <Label x:Name="Costumer"
+                   Text="Costumer:"
+                   Padding="10"/>
+
+            <Label x:Name="Employee"
+                    Text="Employee:"
+                    Padding="10"/>
+     
+            <Label x:Name="Activity"
+                    Text="Activity:"
+                    Padding="10"/>
+
+            <Label x:Name="Text"
+                   Text="Text:"
+                   Padding="10"/>
+
+            <Label x:Name="Time"
+                   Text="Current time used"
+                   Padding="10"
+                   FontSize="Large"/>
+            
+            <Label x:Name="Counter"
+                   Text="00:00:00"
+                   Padding="10"
+                   FontSize="Large"/>
+
+            <Button x:Name="StartStopContinueTime"
+                    Text="Start"
+                    Clicked="OnStartStop"
+                    BackgroundColor="DarkBlue"
+                    Margin="20"
+                    Padding="20"/>
+            <Button x:Name="Commit"
+                    Text="Commit"
+                    BackgroundColor="DarkRed"
+                    Margin="20"
+                    Padding="20"/>
+        </VerticalStackLayout>
+    </StackLayout>
 </ContentPage>

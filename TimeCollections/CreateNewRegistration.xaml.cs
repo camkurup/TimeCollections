@@ -6,9 +6,9 @@ public partial class CreateNewRegistration : ContentPage
 	{
 		InitializeComponent();
 	}
-
+	/*
     private void OnCreateRegistration(object sender, EventArgs e)
     {
 
-    }
+    }*/
 }

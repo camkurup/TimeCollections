@@ -7,8 +7,7 @@
                  HorizontalOptions="Center">
         <VerticalStackLayout >
             <Button x:Name="activity"
-                    Clicked="OnActivityClicked"
-                    Text="Name of activity her"
+                    Text="Name of registration her"
                     BackgroundColor="DarkBlue"
                     Margin="20"
                     Padding="50"/>
