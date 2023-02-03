@@ -12,8 +12,6 @@
                     Margin="20"
                     Padding="50"/>
         </VerticalStackLayout>
-
-       
     </StackLayout>
 
 </ContentPage>
