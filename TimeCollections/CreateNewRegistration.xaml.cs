@@ -1,3 +1,5 @@
+using TimeCollections.Model;
+
 namespace TimeCollections;
 
 public partial class CreateNewRegistration : ContentPage
@@ -6,9 +8,14 @@ public partial class CreateNewRegistration : ContentPage
 	{
 		InitializeComponent();
 	}
-	/*
-    private void OnCreateRegistration(object sender, EventArgs e)
-    {
 
-    }*/
+	private void OnCreateRegistration(object sender, EventArgs e)
+	{
+
+	}
+
+
+	
+
+
 }

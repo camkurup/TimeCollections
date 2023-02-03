@@ -10,7 +10,7 @@
 
         <VerticalStackLayout Margin="20,35,20,25">
             <Label x:Name="CreateRegistration"
-                   Text="Creat New Registration"
+                   Text="Create New Registration"
                    Margin="20"
                    FontSize="Header"/>
             <HorizontalStackLayout Margin="20">
@@ -24,10 +24,10 @@
             </HorizontalStackLayout>
             
             <HorizontalStackLayout Margin="20">
-                <Label x:Name="Costumer"
-                       Text="Costumer"
+                <Label x:Name="Customer"
+                       Text="Customer"
                        Padding="10"/>
-                <Entry x:Name="InputCostumer"
+                <Entry x:Name="InputCustomer"
                        Placeholder="Enter text"/>
             </HorizontalStackLayout>
             
@@ -55,7 +55,7 @@
             </HorizontalStackLayout>
 
             <Button x:Name="Create"
-                    Text="Creat"
+                    Text="Create"
                     BackgroundColor="DarkBlue"
                     Margin="20"
                     Padding="20"/>
