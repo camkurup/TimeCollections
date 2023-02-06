@@ -23,9 +23,13 @@ public partial class MainPage : ContentPage
 		listTimeRegistrations.ItemsSource = timeRegistrations;
 	}
 
-	public void SelectedTimeRegistration(object sender, SelectedItemChangedEventArgs e)
+	
+	public async Task SelectedTimeRegistration(object sender, SelectedItemChangedEventArgs e)
 	{
 		selectedTimeRegistration = (TimeRegistration)e.SelectedItem;
+
+
+		await Shell.Current.GoToAsync($"{nameof(TimeRegistration)}");
 
 	}
 
