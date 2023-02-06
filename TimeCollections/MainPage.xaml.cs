@@ -10,6 +10,7 @@ namespace TimeCollections;
 public partial class MainPage : ContentPage
 {
 	private List<TimeRegistration> timeRegistrations;
+	private TimeRegistration selectedTimeRegistration;
 	TimeRegistrationController timeRegistrationController = new TimeRegistrationController();
 
 	public MainPage()
@@ -22,10 +23,13 @@ public partial class MainPage : ContentPage
 		listTimeRegistrations.ItemsSource = timeRegistrations;
 	}
 
-	public void SelectedTimeRegistration(object sender, EventArgs e)
+	public void SelectedTimeRegistration(object sender, SelectedItemChangedEventArgs e)
 	{
+		selectedTimeRegistration = (TimeRegistration)e.SelectedItem;
 
 	}
+
+	
 
 }
 
