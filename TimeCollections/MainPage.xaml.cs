@@ -22,7 +22,10 @@ public partial class MainPage : ContentPage
 		listTimeRegistrations.ItemsSource = timeRegistrations;
 	}
 
-	
+	public void SelectedTimeRegistration(object sender, EventArgs e)
+	{
+
+	}
 
 }
 
