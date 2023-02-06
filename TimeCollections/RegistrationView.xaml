@@ -8,11 +8,12 @@
                  Orientation="Horizontal"
                  HorizontalOptions="Center">
 
-        <VerticalStackLayout Margin="20,35,20,25">
+        <VerticalStackLayout Margin="20,35,20,35">
             <Label x:Name="Registration"
                    Text="Registration"
                    FontSize="Header"
-                   Margin="20"/>
+                   Margin="20"  
+               />
 
             <Label x:Name="ProjectName"
                    Text="Project Name:"
@@ -44,6 +45,9 @@
                    Padding="10"
                    FontSize="Large"/>
 
+        </VerticalStackLayout>
+        <VerticalStackLayout Margin="20,35,20,35">
+
             <Button x:Name="StartStopContinueTime"
                     Text="Start"
                     Clicked="OnStartStop"
@@ -55,6 +59,7 @@
                     BackgroundColor="DarkRed"
                     Margin="20"
                     Padding="20"/>
+        
         </VerticalStackLayout>
     </StackLayout>
 </ContentPage>
