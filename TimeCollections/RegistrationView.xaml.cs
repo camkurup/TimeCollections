@@ -57,4 +57,9 @@ public partial class RegistrationView : ContentPage
 		StartStopContinueTime.Text = "Start";
 		isRunning = false;
 	}
+
+    private void OnReturnCliked(object sender, EventArgs e)
+    {
+
+    }
 }
