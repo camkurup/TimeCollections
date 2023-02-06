@@ -19,8 +19,8 @@
                    Text="Project Name:"
                    Padding="10"/>
 
-            <Label x:Name="Costumer"
-                   Text="Costumer:"
+            <Label x:Name="Customer"
+                   Text="Customer:"
                    Padding="10"/>
 
             <Label x:Name="Employee"
