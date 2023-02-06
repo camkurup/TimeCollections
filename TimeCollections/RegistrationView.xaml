@@ -12,8 +12,7 @@
             <Label x:Name="Registration"
                    Text="Registration"
                    FontSize="Header"
-                   Margin="20"  
-               />
+                   Margin="20"/>
 
             <Label x:Name="ProjectName"
                    Text="Project Name:"
@@ -46,7 +45,7 @@
                    FontSize="Large"/>
 
         </VerticalStackLayout>
-        <VerticalStackLayout Margin="20,35,20,35">
+        <VerticalStackLayout Margin="10,136,20,35">
 
             <Button x:Name="StartStopContinueTime"
                     Text="Start"
