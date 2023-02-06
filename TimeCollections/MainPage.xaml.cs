@@ -29,7 +29,7 @@ public partial class MainPage : ContentPage
 		selectedTimeRegistration = (TimeRegistration)e.SelectedItem;
 
 
-		await Shell.Current.GoToAsync($"{nameof(TimeRegistration)}");
+		
 
 	}
 
