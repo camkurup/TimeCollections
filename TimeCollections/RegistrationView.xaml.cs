@@ -3,7 +3,7 @@ using TimeCollections.Model;
 
 namespace TimeCollections;
 
-[QueryProperty(nameof(MainPage), "TimeRegistration")]
+[QueryProperty(nameof(TimeRegistration), "TimeRegistration")]
 public partial class RegistrationView : ContentPage
 {
 	private IDispatcherTimer timer;
@@ -29,7 +29,7 @@ public partial class RegistrationView : ContentPage
 
 		BindingContext = this;
 
-		Debug.WriteLine($" {registration.Project} næsten i mål");
+	//	Debug.WriteLine($" {registration.Project} næsten i mål");
 
 
 		timer = Dispatcher.CreateTimer();
