@@ -7,7 +7,7 @@
     <StackLayout Margin="20"
                  Orientation="Horizontal"
                  HorizontalOptions="Center">
-
+        <ScrollView>
         <VerticalStackLayout Margin="20,35,20,25">
             <Label x:Name="CreateRegistration"
                    Text="Create New Registration"
@@ -60,5 +60,6 @@
                     Margin="20"
                     Padding="20"/>
         </VerticalStackLayout>
+        </ScrollView>
     </StackLayout>
 </ContentPage>

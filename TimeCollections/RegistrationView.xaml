@@ -3,19 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TimeCollections.RegistrationView"
              Title="RegistrationView">
-
+    <ScrollView>
     <StackLayout Margin="20"
                  Orientation="Horizontal"
                  HorizontalOptions="Center">
 
         <VerticalStackLayout Margin="20,35,20,35">
-            <Label x:Name="Registration"
+            
+            <Label x:Name="RegistrationPage"         
                    Text="Registration"
                    FontSize="Header"
                    Margin="20"/>
 
             <Label x:Name="ProjectName"
-                   Text="Project Name:"
+                   Text="Project"
                    Padding="10"/>
 
             <Label x:Name="Customer"
@@ -60,5 +61,7 @@
                     Padding="20"/>
         
         </VerticalStackLayout>
+        
     </StackLayout>
+    </ScrollView>
 </ContentPage>

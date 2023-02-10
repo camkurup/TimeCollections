@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace TimeCollections.Model
 {
-	class TimeRegistration
+
+	public partial class TimeRegistration 
 	{
 		private string project;
 		private string customer;
@@ -32,6 +34,7 @@ namespace TimeCollections.Model
 		}
 
 		public TimeRegistration() { }
-
 	}
+
+
 }

@@ -1,7 +1,9 @@
 using System.Diagnostics;
+using TimeCollections.Model;
 
 namespace TimeCollections;
 
+[QueryProperty(nameof(MainPage), "TimeRegistration")]
 public partial class RegistrationView : ContentPage
 {
 	private IDispatcherTimer timer;
@@ -10,19 +12,33 @@ public partial class RegistrationView : ContentPage
 
 	private bool isRunning;
 
-
-
+	TimeRegistration registration;
+	public TimeRegistration Registration
+	{
+		get => registration;
+		set
+		{
+			registration = value;
+			OnPropertyChanged();
+		}
+	}
 
 	public RegistrationView()
 	{
 		InitializeComponent();
 
+		BindingContext = this;
+
+		Debug.WriteLine($" {registration.Project} næsten i mål");
+
+
 		timer = Dispatcher.CreateTimer();
 		timer.Interval = TimeSpan.FromSeconds(1);
 		timer.Tick += Timer_Tick;
 
-	
 	}
+
+	
 	private void Timer_Tick(object sender, EventArgs e)
 	{
 		counterInSeconds++;

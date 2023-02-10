@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TimeCollections.MainPage">
+             xmlns:model="clr-namespace:TimeCollections.Model"
+             x:Class="TimeCollections.MainPage"
+             >
     <StackLayout Margin="20"
                  Orientation="Horizontal"
                  HorizontalOptions="Center">
@@ -13,10 +15,47 @@
                     Padding="50"/>
 
         </VerticalStackLayout>-->
-        <ListView x:Name="listTimeRegistrations" SelectedItem="SelectedTimeRegistration" SelectionMode="Single">
+
+        <CollectionView x:Name="listTimeRegistrations" SelectionMode="Single" SelectionChanged="SelectedItem">
+           
+            <CollectionView.ItemTemplate>
+            <DataTemplate >
+                <StackLayout Margin="20"
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center">
+                    <HorizontalStackLayout>
+                        <Label x:Name="projectLabel" Text="Project:" Padding="0,0,10,0" FontAttributes="Bold"/>
+                        <Label Text="{Binding Project}"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label x:Name="customerLabel" Text="Customer:" Padding="0,0,10,0" FontAttributes="Bold"/>
+                        <Label Text="{Binding Customer}" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label x:Name="employeeLabel" Text="Employee:" Padding="0,0,10,0" FontAttributes="Bold"/>
+                        <Label Text="{Binding Employee}" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label x:Name="activityLabel" Text="Activity:" Padding="0,0,10,0" FontAttributes="Bold"/>
+                        <Label Text="{Binding Activity}" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label x:Name="textLabel" Text="Text:" Padding="0,0,10,0" FontAttributes="Bold"/>
+                        <Label Text="{Binding Text}" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label x:Name="timeLabel" Text="Time:" Padding="0,0,10,0" FontAttributes="Bold"/>
+                        <Label Text="{Binding Time}" />
+                    </HorizontalStackLayout>
+                </StackLayout>
+            </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <!--<ListView x:Name="listTimeRegistrations" SelectedItem="SelectedItem" SelectionMode="Single">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
+                       
                         <StackLayout Margin="20"
                                      HorizontalOptions="Center"
                                      VerticalOptions="Center">
@@ -45,11 +84,14 @@
                                 <Label Text="{Binding Time}" />
                             </HorizontalStackLayout>
                         </StackLayout>
+                       
                     </ViewCell>
                
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>
+        </ListView>-->
+
+       
     </StackLayout>
     
 
