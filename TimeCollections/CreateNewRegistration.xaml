@@ -3,7 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TimeCollections.CreateNewRegistration"
              Title="CreateNewRegistration">
-
+    <!--
+    In this layout vi stacks a vertical list
+    with some horizontail list. Thoes lists contains a lable (text) and entery (input)
+    In the end we have a button for create
+    -->
     <StackLayout Margin="20"
                  Orientation="Horizontal"
                  HorizontalOptions="Center">

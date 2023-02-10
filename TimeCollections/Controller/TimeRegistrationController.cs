@@ -7,6 +7,9 @@ using TimeCollections.Model;
 
 namespace TimeCollections.Controller
 {
+	//in this class we creates a list of timeregistrations.
+	//at some point later in the project, the idea is to make an API andthrough thart call a database. 
+	//but for now the code is hardcoded.
 	internal class TimeRegistrationController
 	{
 		
@@ -21,12 +24,9 @@ namespace TimeCollections.Controller
 			new TimeRegistration("project7", "Lolland-Falsters Bryghus AS", "JSH", "Konsulenttimer", "PowerBI")
 		};
 
-	
 		public List<TimeRegistration> GetTimeRegistrations()
 		{
 			return timeRegistrations;
 		}
-
 	}
-
 }
