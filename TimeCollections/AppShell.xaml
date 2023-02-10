@@ -6,6 +6,9 @@
     xmlns:local="clr-namespace:TimeCollections"
     Shell.NavBarIsVisible="True">
 
+    <!--
+    Here we set the navigation bar up.
+    -->
     <TabBar>
         <ShellContent
         Title="Home"
@@ -22,6 +25,4 @@
         ContentTemplate="{DataTemplate local:CreateNewRegistration}"
         Route="CreateNewRegistration" />
     </TabBar>
-    
-
-</Shell>
+ </Shell>

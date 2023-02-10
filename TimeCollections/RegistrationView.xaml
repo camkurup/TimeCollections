@@ -4,6 +4,12 @@
              x:Class="TimeCollections.RegistrationView"
              Title="RegistrationView">
 
+    <!--
+    Here we have a stacklayout vith a vertical layout aswell
+    in here we have labels with placeholders for the input. 
+    (maybe we should rethinke this, it would probebly make sence to have the lable  AND the depending input)
+    in the end we have the buttons that by margin is set to be placed next to all the info
+    -->
     <StackLayout Margin="20"
                  Orientation="Horizontal"
                  HorizontalOptions="Center">

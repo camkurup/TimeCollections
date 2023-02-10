@@ -11,6 +11,7 @@ public partial class CreateNewRegistration : ContentPage
 		InitializeComponent();
 	}
 
+	//creating new registration
 	private void OnCreateRegistration(object sender, EventArgs e)
 	{
 		TimeRegistration timeRegistration = new TimeRegistration(
@@ -20,14 +21,6 @@ public partial class CreateNewRegistration : ContentPage
 			InputActivity.ToString(), 
 			InputText.ToString());
 
-		controller.GetTimeRegistrations().Add(timeRegistration);
-		
+		controller.GetTimeRegistrations().Add(timeRegistration);		
 	}
-
-	
-
-
-	
-
-
 }
