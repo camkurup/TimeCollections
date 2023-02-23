@@ -13,34 +13,28 @@ public partial class MainPage : ContentPage
 	TimeRegistration selectedTimeRegistration = new TimeRegistration();
 	TimeRegistrationController timeRegistrationController = new TimeRegistrationController();
 
-	
+
 
 	public MainPage()
 	{
 		InitializeComponent();
 
-		
+
 
 		timeRegistrations = timeRegistrationController.GetTimeRegistrations();
 
 
 		listTimeRegistrations.ItemsSource = timeRegistrations;
 
-
-
 	}
-
 	
 
 	private async void SelectedItem(object sender, SelectionChangedEventArgs e)
 	{
-		Debug.WriteLine("****************");
-
-		selectedTimeRegistration = (TimeRegistration)listTimeRegistrations.SelectedItem as TimeRegistration;
+	
+		selectedTimeRegistration = (TimeRegistration)listTimeRegistrations.SelectedItem;
 		
-	//	Debug.WriteLine(selectedTimeRegistration.Project);
-
-		
+		Debug.WriteLine($"{selectedTimeRegistration.Project} - projektet i gemt i selected item");
 
 		if (selectedTimeRegistration == null)
 		{
@@ -49,16 +43,11 @@ public partial class MainPage : ContentPage
 
 		var navigationParameter = new Dictionary<string, object>
 		{
-			{"TimeRegistration", selectedTimeRegistration}
+			{"Registration", selectedTimeRegistration}
 		};
 
-	//	Debug.WriteLine($"{navigationParameter.Values} hej ");
+		Debug.WriteLine($"{navigationParameter} - navigationsparameter ");
 		await Shell.Current.GoToAsync("registrationview", navigationParameter);
-
-
-
 	}
-
-
 }
 

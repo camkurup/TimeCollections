@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace TimeCollections.Model
 {
-	//tis is a model of a timeregistrartion
-	class TimeRegistration
+	//this is a model of a timeregistration
 
 	public partial class TimeRegistration 
 	{

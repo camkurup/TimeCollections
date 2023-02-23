@@ -5,7 +5,7 @@ namespace TimeCollections;
 
 //This class takes care of the registration View
 //meaning that it represents the counter start/stop
-[QueryProperty(nameof(TimeRegistration), "TimeRegistration")]
+[QueryProperty(nameof(Registration), "Registration")]
 public partial class RegistrationView : ContentPage
 {
 	private IDispatcherTimer timer;
@@ -28,11 +28,9 @@ public partial class RegistrationView : ContentPage
 	public RegistrationView()
 	{
 		InitializeComponent();
-
 		BindingContext = this;
 
-	//	Debug.WriteLine($" {registration.Project} næsten i mål");
-
+	//	Debug.WriteLine($" {} næsten i mål");
 
 		timer = Dispatcher.CreateTimer();
 		timer.Interval = TimeSpan.FromSeconds(1);
@@ -51,13 +49,13 @@ public partial class RegistrationView : ContentPage
 		Counter.Text = $"{hours:D2}:{minutes:D2}:{seconds:D2}";
 	}
 
-	//When button is clicked the StartStop methode will be trigerd
+	//When button is clicked the StartStop method will be triggered
 	public void OnStartStop(object sender, EventArgs e)
 	{
 		StartStop();
 	}
 
-	//if the counter is running, then stop the time, else start the time - both by using propper methode from farther below
+	//If the counter is running, then stop the time method, else start the time - both by using proper methods from further below
 	public void StartStop()
 	{
 		if (isRunning)
@@ -70,7 +68,7 @@ public partial class RegistrationView : ContentPage
 		}
 	}
 
-	//starts the timer and changes the text on the button
+	//Starts the timer and changes the text on the button to "Pause"
 	public void StartTimer()
 	{
 		timer.Start();
@@ -78,7 +76,7 @@ public partial class RegistrationView : ContentPage
 		isRunning = true;
 	}
 
-	//stops the timer and changes the buttons text
+	//Stops the timer and changes the text on the button to "Start"
 	public void StopTimer()
 	{
 		timer.Stop();

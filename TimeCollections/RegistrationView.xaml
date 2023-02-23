@@ -16,58 +16,100 @@
                  HorizontalOptions="Center">
 
         <VerticalStackLayout Margin="20,35,20,35">
+
+                <HorizontalStackLayout>
+                    <Label 
+                        x:Name="RegistrationPage"         
+                        Text="Registration"
+                        FontSize="Header"
+                        Margin="20"/>
+                </HorizontalStackLayout>
             
-            <Label x:Name="RegistrationPage"         
-                   Text="Registration"
-                   FontSize="Header"
-                   Margin="20"/>
+                <HorizontalStackLayout>
+                    <Label 
+                        x:Name="ProjectName"
+                        Text="Project:"
+                        Padding="10"/>
 
-            <Label x:Name="ProjectName"
-                   Text="Project"
-                   Padding="10"/>
+                    <Label 
+                        Text="{Binding Project}"
+                        Padding="10"/>
+                </HorizontalStackLayout>
 
-            <Label x:Name="Customer"
-                   Text="Customer:"
-                   Padding="10"/>
+                <HorizontalStackLayout>
+                    <Label 
+                        x:Name="Customer"
+                        Text="Customer:"
+                        Padding="10"/>
 
-            <Label x:Name="Employee"
-                    Text="Employee:"
-                    Padding="10"/>
-     
-            <Label x:Name="Activity"
-                    Text="Activity:"
-                    Padding="10"/>
-
-            <Label x:Name="Text"
-                   Text="Text:"
-                   Padding="10"/>
-
-            <Label x:Name="Time"
-                   Text="Current time used"
-                   Padding="10"
-                   FontSize="Large"/>
+                    <Label 
+                        Text="{Binding Customer}"
+                        Padding="10"/>
+                </HorizontalStackLayout>
             
-            <Label x:Name="Counter"
-                   Text="00:00:00"
-                   Padding="10"
-                   FontSize="Large"/>
+                <HorizontalStackLayout>
+                    <Label 
+                        x:Name="Employee"
+                        Text="Employee:"
+                        Padding="10"/>
 
-        </VerticalStackLayout>
-        <VerticalStackLayout Margin="10,136,20,35">
+                    <Label 
+                        Text="{Binding Employee}"
+                        Padding="10"/>
+                </HorizontalStackLayout>
+            
+                <HorizontalStackLayout>
+                    <Label 
+                        x:Name="Activity"
+                        Text="Activity:"
+                        Padding="10"/>
 
-            <Button x:Name="StartStopContinueTime"
-                    Text="Start"
-                    Clicked="OnStartStop"
-                    BackgroundColor="DarkBlue"
-                    Margin="20"
-                    Padding="20"/>
-            <Button x:Name="Commit"
-                    Text="Commit"
-                    BackgroundColor="DarkRed"
-                    Margin="20"
-                    Padding="20"/>
-        
-        </VerticalStackLayout>
+                    <Label 
+                        Text="{Binding Activity}"
+                        Padding="10"/>
+                </HorizontalStackLayout>
+            
+                <HorizontalStackLayout>
+                    <Label 
+                        x:Name="Text"
+                        Text="Text:"
+                        Padding="10"/>
+
+                    <Label 
+                        Text="{Binding Text}"
+                        Padding="10"/>
+                </HorizontalStackLayout>
+            
+                <HorizontalStackLayout>
+                    <Label 
+                        x:Name="Time"
+                        Text="Current time used"
+                        Padding="10"
+                        FontSize="Large"/>
+
+                    <Label 
+                        x:Name="Counter"
+                        Text="00:00:00"
+                        Padding="10"
+                        FontSize="Large"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Margin="10,136,20,35">
+                <Button 
+                x:Name="StartStopContinueTime"
+                Text="Start"
+                Clicked="OnStartStop"                    
+                BackgroundColor="DarkBlue"
+                Margin="20"
+                Padding="20"/>
+                <Button 
+                x:Name="Commit"
+                Text="Commit"
+                BackgroundColor="DarkRed"
+                Margin="20"
+                Padding="20"/>
+            </VerticalStackLayout>
         
     </StackLayout>
     </ScrollView>
